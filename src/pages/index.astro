@@ -7,66 +7,37 @@ import ContentMedia from '../components/ContentMedia.astro'
 ---
 
 <DefaultLayout title="Home">
-  <Hero />
-  <section class="my-64">
+  <section class="my-16">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Features</h2>
+      <h2 class="mb-16 text-6xm text-center">Lista de sitios web en México que aceptan Bitcoin</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Tailwind CSS">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="mdi:message-bulleted" title="Dream English" site_link="www.dreamenglish.com.mx">
+          La mejor escuela para aprender inglés on line.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="a11y Components">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:pizza" title="Pixza" site_link="www.pixza.mx">
+          una pizzería diferente a cualquier otra que hayas conocido. Además de un menú enfocado en ingredientes mexicanos, tienen la misión de emplear a personas en abandono social y promover la prosperidad a través de la fortaleza de la comunidad.
         </Feature>
-        <Feature icon="mdi:looks" title="Prettier">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:theater" title="Cine Tonala" site_link="https://www.cinetonala.mx/">
+          Cine Tonalá es un cine independiente con una impresionante variedad de películas. Además de la decoración vintage, el espacio cuenta con un restaurante que sirve comida para todas las horas del día.
         </Feature>
-        <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+        <Feature icon="mdi:thought-bubble-outline" title="Fantastico Comics Store">
+          Si te gustan los cómics, Fantástico Comics te fascinará. Con 5 sucursales en todo México, es la tienda más grande de su tipo en América Latina.
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
+        <Feature icon="mdi:shoe-sneaker" title="Fama Sport (Querétaro)">
+          ¿Te encantan las zapatillas deportivas pero nunca encuentras el par perfecto para ti? La tienda Fama Sport, ubicada en Querétaro, ofrece productos de calidad a excelentes precios durante todo el año. Además de tarjetas de débito y crédito, también aceptan Bitcoin.
         </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
+        <Feature icon="mdi:coffee" title="The Coffee York (Puebla)">
+          ¿Necesitas un empujón para continuar con tus actividades del día? Tomar un café en The Coffee York puede ser una excelente opción para cuando estés en Puebla. Allí podrás disfrutar de tu bebida y pagar con criptomonedas; todo muy sencillo y práctico.
         </Feature>
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
-  <section class="mt-64 mb-32">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
-      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+  <section>
+    <div class="container mx-auto">
+      <h2 class="mb-16 text-6xl text-center">Numeros</h2>
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2">
+        <Counter count="130" title="Establecimientos" sub="Fisicos" />
+        <Counter count="1700" title="Sitios" sub="En internet" />
       </div>
     </div>
   </section>
