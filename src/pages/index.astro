@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+import CallToAction from '../components/CallToAction.astro'
 ---
 
 <DefaultLayout title="Home">
@@ -11,10 +12,10 @@ import ContentMedia from '../components/ContentMedia.astro'
     <div class="container">
       <h2 class="mb-16 text-6xm text-center">Lista de sitios web en LATAM que aceptan Bitcoin</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:message-bulleted" title="Dream English" site_link="www.dreamenglish.com.mx">
+        <Feature icon="mdi:message-bulleted" title="Dream English" site_link="https://www.dreamenglish.com.mx">
           La mejor escuela para aprender inglés on line.
         </Feature>
-        <Feature icon="mdi:pizza" title="Pixza" site_link="www.pixza.mx">
+        <Feature icon="mdi:pizza" title="Pixza" site_link="https://www.pixza.mx">
           una pizzería diferente a cualquier otra que hayas conocido. Además de un menú enfocado en ingredientes mexicanos, tienen la misión de emplear a personas en abandono social y promover la prosperidad a través de la fortaleza de la comunidad.
         </Feature>
         <Feature icon="mdi:theater" title="Cine Tonala" site_link="https://www.cinetonala.mx/">
@@ -33,11 +34,22 @@ import ContentMedia from '../components/ContentMedia.astro'
     </div>
   </section>
   <section>
-    <div class="container mx-auto">
+    <div class="container">
       <h2 class="mb-16 text-6xl text-center">Numeros</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2">
         <Counter count="130" title="Establecimientos" sub="Fisicos" />
         <Counter count="1700" title="Sitios" sub="En internet" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <CallToAction />
+  </section>
+  <section>
+    <div class="container">
+      <h2 class="mb-16 text-6xl text-center">Mapa</h2>
+      <div class="flex justify-center">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1Q-U2nKViIsUQWZ6UaC5UcnVIr7Uem7D5&ehbc=2E312F" width="640" height="480"></iframe>
       </div>
     </div>
   </section>
