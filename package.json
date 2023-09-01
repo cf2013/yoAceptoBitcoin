@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.19.7",
+    "astro-compress": "1.1.28",
     "@astrojs/partytown": "^1.0.3",
     "@astrojs/tailwind": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
