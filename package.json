@@ -4,6 +4,12 @@
   "version": "2.0.4",
   "author": "Mark Teekman",
   "homepage": "https://accessible-astro.netlify.app/",
+  "engines": {
+    "node": ">=18.14.1"
+   },
+  "platform": {
+    "apiRuntime": "node:18"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -35,8 +41,5 @@
     "@types/react-dom": "^18.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "platform": {
-    "apiRuntime": "node:18"
   }
 }
