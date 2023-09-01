@@ -36,7 +36,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "engines": {
-    "node": ">=14.0.0"
-   }
+  "platform": {
+    "apiRuntime": "node:18"
+  }
 }
