@@ -1,4 +1,5 @@
 ---
+import '@astrojs/tailwind/base.css'
 import '../assets/scss/globals.scss'
 import SiteMeta from '../components/SiteMeta.astro'
 import Header from '../components/Header.astro'
@@ -33,6 +34,16 @@ const {
       author={author}
     />
   </head>
+  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ3TC6ZKVB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KQ3TC6ZKVB');
+</script>
   <body>
     <Header />
     <main id="main-content">
