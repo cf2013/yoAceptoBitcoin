@@ -10,6 +10,9 @@
     "build": "astro build",
     "preview": "astro preview"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@astrojs/mdx": "^1.0.2",
     "@astrojs/partytown": "^2.0.0",
