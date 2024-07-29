@@ -3,16 +3,16 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import CallToAction from '../components/CallToAction.astro'
+import Searchbar from '../components/Searchbar.astro'
 ---
 
 <DefaultLayout title="Home">
   <section class="my-16">
+    <section>
+      <Searchbar />
+    </section>
     <div class="container">
-      <h2 class="mb-16 text-6xm text-center">Lista de sitios web en LATAM que aceptan Bitcoin</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:message-bulleted" title="Dream English" site_link="https://www.dreamenglish.com.mx">
-          La mejor escuela para aprender inglés on line.
-        </Feature>
         <Feature icon="mdi:pizza" title="Pixza" site_link="https://www.pixza.mx">
           una pizzería diferente a cualquier otra que hayas conocido. Además de un menú enfocado en ingredientes mexicanos, tienen la misión de emplear a personas en abandono social y promover la prosperidad a través de la fortaleza de la comunidad.
         </Feature>
@@ -28,9 +28,13 @@ import CallToAction from '../components/CallToAction.astro'
         <Feature icon="mdi:coffee" title="The Coffee York (Puebla)">
           ¿Necesitas un empujón para continuar con tus actividades del día? Tomar un café en The Coffee York puede ser una excelente opción para cuando estés en Puebla. Allí podrás disfrutar de tu bebida y pagar con criptomonedas; todo muy sencillo y práctico.
         </Feature>
+        <Feature icon="mdi:mall" title="Elektra (todo Mexico)" site_link="https://www.elektra.mx/">
+          El tio Richie te acepta tus bitcoins en todas sus tiendas Elektra, no importa si estas en la CDMX o en la playa.
+        </Feature>
       </div>
     </div>
   </section>
+  <br>
   <section>
     <div class="container">
       <h2 class="mb-16 text-6xl text-center">Numeros</h2>
