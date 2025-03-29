@@ -134,11 +134,11 @@ body {
     @include breakpoint(medium) {
       font-size: 1.25rem;
       line-height: 1.875rem;
-      h6 {
-        font-size: 1rem;
-      }
     }
+  }
 
+  h6 {
+    font-size: 1rem;
     line-height: 1.5rem;
 
     @include breakpoint(medium) {
