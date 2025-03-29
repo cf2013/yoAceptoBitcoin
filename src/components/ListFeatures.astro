@@ -1,0 +1,16 @@
+---
+import { readItems } from '../scripts/ReadDataFromCosmos';
+import Feature from '../components/Feature.astro'
+const bussiness = await readItems();
+---
+<div class="container">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        {bussiness.map(company => (
+        <Feature icon={company.Icon} title={company.Name} site_link={company.WebSite}>
+            {company.companyId}
+            {company.Description}
+            {company.Location}
+        </Feature>
+        ))}
+    </div>
+</div>

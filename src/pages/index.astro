@@ -3,34 +3,20 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import CallToAction from '../components/CallToAction.astro'
+import Searchbar from '../components/Searchbar.astro'
+import ListFeatures from '../components/ListFeatures.astro'
 ---
 
 <DefaultLayout title="Home">
   <section class="my-16">
+    <section>
+      <Searchbar />
+    </section>
     <div class="container">
-      <h2 class="mb-16 text-6xm text-center">Lista de sitios web en LATAM que aceptan Bitcoin</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:message-bulleted" title="Dream English" site_link="https://www.dreamenglish.com.mx">
-          La mejor escuela para aprender inglés on line.
-        </Feature>
-        <Feature icon="mdi:pizza" title="Pixza" site_link="https://www.pixza.mx">
-          una pizzería diferente a cualquier otra que hayas conocido. Además de un menú enfocado en ingredientes mexicanos, tienen la misión de emplear a personas en abandono social y promover la prosperidad a través de la fortaleza de la comunidad.
-        </Feature>
-        <Feature icon="mdi:theater" title="Cine Tonala" site_link="https://www.cinetonala.mx/">
-          Cine Tonalá es un cine independiente con una impresionante variedad de películas. Además de la decoración vintage, el espacio cuenta con un restaurante que sirve comida para todas las horas del día.
-        </Feature>
-        <Feature icon="mdi:thought-bubble-outline" title="Fantastico Comics Store">
-          Si te gustan los cómics, Fantástico Comics te fascinará. Con 5 sucursales en todo México, es la tienda más grande de su tipo en América Latina.
-        </Feature>
-        <Feature icon="mdi:shoe-sneaker" title="Fama Sport (Querétaro)">
-          ¿Te encantan las zapatillas deportivas pero nunca encuentras el par perfecto para ti? La tienda Fama Sport, ubicada en Querétaro, ofrece productos de calidad a excelentes precios durante todo el año. Además de tarjetas de débito y crédito, también aceptan Bitcoin.
-        </Feature>
-        <Feature icon="mdi:coffee" title="The Coffee York (Puebla)">
-          ¿Necesitas un empujón para continuar con tus actividades del día? Tomar un café en The Coffee York puede ser una excelente opción para cuando estés en Puebla. Allí podrás disfrutar de tu bebida y pagar con criptomonedas; todo muy sencillo y práctico.
-        </Feature>
-      </div>
+        <ListFeatures />
     </div>
   </section>
+  <br>
   <section>
     <div class="container">
       <h2 class="mb-16 text-6xl text-center">Numeros</h2>
