@@ -151,9 +151,20 @@ const {
       const data = Object.fromEntries(formData);
 
       try {
-        // Here you would typically send the data to your backend
-        // For now, we'll just simulate a successful submission
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        const response = await fetch('/api/companies', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.error || 'Error submitting form');
+        }
+
+        const result = await response.json();
         
         successMessage.classList.remove('hidden');
         companyForm.classList.add('hidden');
@@ -164,7 +175,7 @@ const {
         }, 2000);
       } catch (error) {
         console.error('Error submitting form:', error);
-        alert('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+        alert(error.message || 'Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
       }
     });
   }
